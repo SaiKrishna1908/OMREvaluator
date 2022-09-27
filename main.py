@@ -1,11 +1,3 @@
-"""
-
-Designed and Developed by-
-Udayraj Deshmukh
-https://github.com/Udayraj123
-
-"""
-
 import re
 import os
 import cv2
@@ -14,6 +6,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import imutils
+import boto3
 
 import config
 import utils
@@ -32,6 +25,9 @@ from time import localtime, strftime, time
 # from colorama import init
 # init()
 # from colorama import Fore, Back, Style
+
+s3_client = boto3.client("s3")
+S3_BUCKET_NAME = 'krishan1908-lambda-bucket'
 
 def process_dir(root_dir, subdir, template):
     curr_dir = os.path.join(root_dir, subdir)
@@ -301,6 +297,7 @@ def process_files(omr_files, template, args, out):
 
     for filepath in omr_files:
         filesCounter += 1
+        print(filepath)        
         # For windows filesystem support: all '\' will be replaced by '/'
         filepath = filepath.replace(os.sep, '/')
 
@@ -313,7 +310,7 @@ def process_files(omr_files, template, args, out):
             print("Error: Filepath not matching to Regex: " + filepath)
             continue
         # set global var for reading
-
+        
         inOMR = cv2.imread(filepath, cv2.IMREAD_GRAYSCALE)
         print(
             '\n[%d] Processing image: \t' %

@@ -1,0 +1,149 @@
+{
+  "Dimensions": [
+    1000,
+    950
+  ],
+  "BubbleDimensions": [
+    50  ,
+    60
+  ],
+  "Options": {
+    "Marker": {
+      "RelativePath": "omr_marker.png",
+      "SheetToMarkerWidthRatio": 17
+    },
+    "OverrideFlags": {
+      "noCropping": true
+    }
+  },
+  "Concatenations": {
+
+  },
+  "Singles": [
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q5",
+    "q6",
+    "q7",
+    "q8",
+    "q9",
+    "q10",
+    "q11",
+    "q12",
+    "q13",
+    "q14",
+    "q15",
+    "q16",
+    "q17",
+    "q18",
+    "q19",
+    "q20",
+    "q21",
+    "q22",
+    "q23",
+    "q24",
+    "q25",
+    "q26",
+    "q27",
+    "q28",
+    "q29",
+    "q30"  
+  ],
+  "QBlocks": {
+    "MCQBlock1": {  
+      "qType": "QTYPE_MCQ4",
+      "orig": [
+        90,
+        200
+      ],
+      "qNos": [
+        [
+          [
+            "q1",
+            "q2",
+            "q3",
+            "q4",
+            "q5",
+            "q6",
+            "q7",
+            "q8",
+            "q9",
+            "q10"            
+          ]
+        ]
+      ],
+      "gaps": [
+        55,
+        70
+      ],
+      "bigGaps": [
+        30,
+        30
+      ]
+    },
+    "MCQBlock2": {
+      "qType": "QTYPE_MCQ4",
+      "orig": [
+        390,
+        200
+      ],
+      "qNos": [
+        [
+          [
+            "q11",
+            "q12",
+            "q13",
+            "q14",
+            "q15",
+            "q16",
+            "q17",
+            "q18",
+            "q19",
+            "q20"
+          ]
+        ]
+      ],
+      "gaps": [
+        55,
+        70
+      ],
+      "bigGaps": [
+        30,
+        30
+      ]
+    },
+    "MCQBlock3": {
+      "qType": "QTYPE_MCQ4",
+      "orig": [
+        680,
+        200
+      ],
+      "qNos": [
+        [
+          [
+            "q21",
+            "q22",
+            "q23",
+            "q24",
+            "q25",
+            "q26",
+            "q27",
+            "q28",
+            "q29",
+            "q30"
+          ]
+        ]
+      ],
+      "gaps": [
+        55,
+        70
+      ],
+      "bigGaps": [
+        30,
+        30
+      ]
+    }
+  }
+}
